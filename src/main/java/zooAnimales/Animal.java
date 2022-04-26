@@ -5,14 +5,15 @@ public class Animal {
     private static int totalAnimales;
     private String nombre;
     private int edad;
-    private String habitad;
+    private String habitat;
     private String genero;
     private Zona zona;
 
-    Animal (String nombre, int edad, String habitad, String genero){
+    public Animal (){totalAnimales++;}
+    public Animal (String nombre, int edad, String habitad, String genero){
         this.nombre = nombre;
         this.edad = edad;
-        this.habitad = habitad;
+        this.habitat = habitad;
         this.genero = genero;
     }
 
@@ -30,9 +31,14 @@ public class Animal {
                 "totalAnimales=" + totalAnimales +
                 ", nombre='" + nombre + '\'' +
                 ", edad=" + edad +
-                ", habitad='" + habitad + '\'' +
+                ", habitad='" + habitat + '\'' +
                 ", genero='" + genero + '\'' +
                 ", zona=" + zona +
                 '}';
     }
+
+    public String getNombre(){return this.nombre;}
+    public int getEdad(){return this.edad;}
+    public String getHabitat(){return this.habitat;}
+    public String getGenero(){return this.genero;}
 }
