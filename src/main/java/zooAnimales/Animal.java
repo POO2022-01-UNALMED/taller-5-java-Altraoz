@@ -31,9 +31,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "“Mi nombre es "+this.nombre+" ,"+this.genero+
-                ", la zona en la que me ubico es "+this.zona+
-                ", en el zoo";
+        return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero;
 
     }
 

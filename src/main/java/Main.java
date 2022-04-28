@@ -2,15 +2,7 @@ import zooAnimales.*;
 
 public class Main {
     public static void main(String[] args) {
-        new Anfibio();
-        new Anfibio();
-        new Mamifero();
-        new Mamifero();
-        new Mamifero();
-        new Reptil();
-        new Pez();
-        new Ave();
-        new Ave();
-        System.out.println(Animal.totalPorTipo());
+        Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
+        System.out.println(an2.toString());
     }
 }
