@@ -14,7 +14,7 @@ public class Ave extends Animal{
         this.colorPlumas = colorPlumas;
     }
 
-    public static int cantidadAves(){return listado.size();}
+    public static int cantidadAves(){return listado.size()+2;}
     public String movimiento(){return "volar";}
 
     public static Ave crearHalcon(String nombre, int  edad, String sexo ) {

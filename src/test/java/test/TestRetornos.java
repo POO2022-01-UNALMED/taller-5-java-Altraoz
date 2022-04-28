@@ -13,7 +13,7 @@ import zooAnimales.Mamifero;
 import zooAnimales.Pez;
 import zooAnimales.Reptil;
 
-@TestMethodOrder(MethodOrderer.Alphanumeric.class)
+
 public class TestRetornos {
 
 	@Test
