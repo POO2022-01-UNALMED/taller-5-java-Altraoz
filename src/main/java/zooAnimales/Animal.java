@@ -17,24 +17,24 @@ public class Animal {
         this.genero = genero;
     }
 
-    public void movimiento(){
-
+    public String movimiento() {
+        return "desplazarse";
     }
 
-    public int totalPorTipo(){
-
+    public static String totalPorTipo(){
+        return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n"+
+                "Aves: "+Ave.cantidadAves()+"\n" +
+                "Reptiles: "+Reptil.cantidadReptiles()+"\n" +
+                "Peces: "+Pez.cantidadPeces()+"\n" +
+                "Anfibios: "+Anfibio.cantidadAnfibios()+"\n";
     }
 
     @Override
     public String toString() {
-        return "Animal{" +
-                "totalAnimales=" + totalAnimales +
-                ", nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", habitad='" + habitat + '\'' +
-                ", genero='" + genero + '\'' +
-                ", zona=" + zona +
-                '}';
+        return "“Mi nombre es "+this.nombre+" ,"+this.genero+
+                ", la zona en la que me ubico es "+this.zona+
+                ", en el zoo";
+
     }
 
     public String getNombre(){return this.nombre;}

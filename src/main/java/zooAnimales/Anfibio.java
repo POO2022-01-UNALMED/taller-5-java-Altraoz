@@ -16,17 +16,23 @@ public class Anfibio extends Animal{
         this.venenoso = venenoso;
     }
 
-    public static int cantidadAnfibios(){
+    public static int cantidadAnfibios(){return listado.size();}
 
+    @Override
+    public String movimiento(){return "saltar";}
+
+    public static Anfibio crearRana(String nombre, int  edad, String sexo ) {
+        Anfibio nuevoAnimal = new Anfibio(nombre, edad, "selva", sexo, "rojo", true);
+        listado.add(nuevoAnimal);
+        ranas++;
+        return nuevoAnimal;
     }
-    public void movimiento(){
 
-    }
-    public static Anfibio crearRana(){
-
-    }
-    public static Anfibio crearSalamandra(){
-
+    public static Anfibio crearSalamandra (String nombre, int  edad, String sexo ) {
+        Anfibio nuevoAnimal = new Anfibio(nombre, edad, "selva", sexo, "negro amarillo", false  );
+        listado.add(nuevoAnimal);
+        salamandras++;
+        return nuevoAnimal;
     }
 
     public String getColorPiel(){

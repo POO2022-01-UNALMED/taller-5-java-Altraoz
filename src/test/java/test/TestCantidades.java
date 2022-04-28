@@ -32,7 +32,7 @@ public class TestCantidades {
 		z1.agregarAnimales(Ave.crearHalcon("test", 11, "M"));
 		z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
 		z1.agregarAnimales(Ave.crearAguila("test", 11, "M"));
-		z1.agregarAnimales(Anfibio.crearRana("test", 11, "M"));
+			z1.agregarAnimales(Anfibio.crearRana("test", 11, "M"));
 		z2.agregarAnimales(Anfibio.crearSalamandra("test", 11, "M"));
 		z2.agregarAnimales(Reptil.crearIguana("test", 11, "M"));
 		z2.agregarAnimales(Reptil.crearSerpiente("test", 11, "M"));
